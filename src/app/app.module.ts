@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { FaceNotRecognisedComponent } from './face-not-recognised/face-not-recognised.component';
 import { FaceRecognisedComponent } from './face-recognised/face-recognised.component';
+import { PopupComponent } from './popup/popup.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -13,7 +16,10 @@ import { FaceRecognisedComponent } from './face-recognised/face-recognised.compo
     AppComponent,
     AttendanceComponent,
     FaceNotRecognisedComponent,
-    FaceRecognisedComponent
+    FaceRecognisedComponent,
+    PopupComponent,
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
