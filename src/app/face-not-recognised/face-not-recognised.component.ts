@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-face-not-recognised',
@@ -7,6 +9,11 @@ import { Component } from '@angular/core';
 })
 export class FaceNotRecognisedComponent {
   img1="../assets/face_not_recognised.png"
+  constructor(private router: Router) {}
+  onsave(){
+
+    this.router.navigate(['/popup']);
+    }
 
 
 }
