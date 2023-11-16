@@ -14,6 +14,11 @@ export class FaceRecognisedComponent {
 
   this.router.navigate(['/face-not-recognised']);
   }
+  onsave1(){
 
+    this.router.navigate(['/employee-login']);
+    }
+
+ 
 }
 

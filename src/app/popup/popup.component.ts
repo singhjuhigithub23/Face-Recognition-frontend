@@ -13,6 +13,10 @@ export class PopupComponent {
 
   this.router.navigate(['/login']);
   }
+  onsave1(){
+
+    this.router.navigate(['/attendance']);
+    }
 
 }
 

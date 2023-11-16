@@ -8,27 +8,31 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 .login-container {
+    
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 300px;
-}
-
-.login-container h3 {
+    width: 100%;
+    height: 100vh;
     text-align: center;
 }
-.logo {
-    /* position: absolute; */
 
-    top: 10px;
-    right: 50px;
-    width: 165px; 
-    height: 70px;
-    margin-left: 70px;
+.login-container h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+    margin-top: 110px;
+    text-align: center;
 }
+
+.logo {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
 .login-container button {
     background-color: #ff8001;
     color: #fff;
@@ -36,14 +40,11 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    margin: 11px 0;
-    width: 200px;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 95%;
+    margin-top: 50px;
+
 }
 
 .login-container button:hover {
     background-color: #ff8001;
-    
-    
 }
