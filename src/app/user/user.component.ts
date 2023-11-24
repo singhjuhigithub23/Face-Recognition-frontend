@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class UserComponent {
   bell="../assets/bell.jpeg"
+  boy_icon="../assets/user-icon.png"
   constructor(private router: Router) {}
 
   onsave() {
@@ -22,6 +23,17 @@ export class UserComponent {
 
     this.router.navigate(['/add-user']);
     }
+    showadmindetails(){
+      // Show the notification box
+      const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+      admindetails.style.display = 'block';
+
+   }
+   hideNotification() {
+     // Hide the notification box
+     const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+     admindetails.style.display = 'none';
+   }
 
 
 }

@@ -25,6 +25,11 @@ export class WelcomeAdminComponent {
 
         this.router.navigate(['/list_attendance']);
         }
+        onsave4(){
+
+          this.router.navigate(['/attendance-management']);
+          }
+      
     
 
 }

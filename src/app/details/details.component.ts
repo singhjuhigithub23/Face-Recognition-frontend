@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class DetailsComponent {
   girl_icon="../assets/girl-icon.png"
+  boy_icon="../assets/user-icon.png"
   constructor(private router: Router) {}
   onsave(){
 

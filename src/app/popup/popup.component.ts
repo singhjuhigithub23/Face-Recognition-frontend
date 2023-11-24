@@ -7,16 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./popup.component.css']
 })
 export class PopupComponent {
+  image="../assets/astreya-logo-white.svg"
  
   constructor(private router: Router) {}
   onsave(){
 
-  this.router.navigate(['/login']);
-  }
-  onsave1(){
-
-    this.router.navigate(['/attendance']);
+    this.router.navigate(['/sent-request']);
     }
+    onsave1(){
+  
+      this.router.navigate(['/attendance']);
+      }
 
 }
 

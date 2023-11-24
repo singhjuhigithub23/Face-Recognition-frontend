@@ -1,5 +1,23 @@
 <!-- <p>notification works!</p> -->
 <body>
+  <nav>
+    <div class="nav-left">
+        <!-- <img [src]="image" alt="Logo" class="logo2"> -->
+    </div>
+    <ul>
+      <li><a (click)="showadmindetails()"><img [src]="boy_icon" alt="Photo Icon" class="nav-icon">
+        </a></li>
+      
+      <li><a >Admin</a></li>
+      <li><a routerLink="/login">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="admin-container" id="admin-details">
+    
+    <p id="adminname">Admin</p>
+    <p id="adminemail">admin@gmail.com</p>
+    <span class="close-button" (click)="hideNotification()">✖</span>
+  </div>
 
     <div class="container">
       <h1>Notification</h1>

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./list-attendance.component.css']
 })
 export class ListAttendanceComponent {
+  boy_icon="../assets/user-icon.png"
 
   constructor(private router: Router) {}
   onsave(){

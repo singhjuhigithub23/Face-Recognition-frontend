@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./attendance.component.css']
 })
 export class AttendanceComponent {
-  image="../assets/astreya-logo.jpeg"
+  
+  image="../assets/astreya-logo-white.svg"
   constructor(private router: Router) {}
   onsave(){
 

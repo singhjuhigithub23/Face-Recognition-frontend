@@ -1,15 +1,47 @@
 
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: url("/assets/astreya_background.png");
+  height: 100vh;
+}
+nav {
+  /* background-color: #f0eaea; */
+  padding: 15px;
+  display: flex;
+  gap: 75rem;
+ 
+}
+.nav-icon{
+
+  width: 25px;
+    height: 25px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 35px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
 
   .calendar-container {
     display: flex;
@@ -17,7 +49,7 @@ body {
     align-items: center;
     max-width: 600px;
     margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     overflow: hidden;
     border-radius: 8px;
   }
@@ -56,7 +88,7 @@ body {
   }
 
   h2 {
-    color: #333;
+    color: #fff;
   }
 
 

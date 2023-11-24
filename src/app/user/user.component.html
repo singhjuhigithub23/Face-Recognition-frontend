@@ -1,6 +1,26 @@
 <!-- <p>user works!</p> -->
 
 <body>
+  <nav>
+    <div class="nav-left">
+        <!-- <img [src]="image" alt="Logo" class="logo2"> -->
+    </div>
+    <ul>
+      <li><a  (click)="showadmindetails()"><img [src]="boy_icon" alt="Photo Icon" class="nav-icon">
+        </a></li>
+       
+      
+      <li><a >Admin</a></li>
+      <li><a routerLink="/login">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="admin-container" id="admin-details">
+    
+      <p id="adminname">Admin</p>
+      <p id="adminemail">admin@gmail.com</p>
+      <span class="close-button" (click)="hideNotification()">✖</span>
+    </div>
+    
 
 <div class="container">
   <button class="add-button"(click)="onsave1()">Add User</button> 
@@ -12,20 +32,20 @@
       <!-- <th>Action</th> -->
     </tr>
     <tr>
-      <td>User 1</td>
-      <td><button class="edit-button"(click)="onsave()">Edit</button></td>
+      <td class="text">User 1</td>
+      <td><button class="edit-button"(click)="onsave()">View</button></td>
     </tr>
     <tr>
-      <td>User 2</td>
-      <td><button class="edit-button">Edit</button></td>
+      <td class="text">User 2</td>
+      <td><button class="edit-button">View</button></td>
     </tr>
     <tr>
-      <td>User 3</td>
-      <td><button class="edit-button">Edit</button></td>
+      <td class="text">User 3</td>
+      <td><button class="edit-button">View</button></td>
     </tr>
     <tr>
-      <td>User 4</td>
-      <td><button class="edit-button">Edit</button></td>
+      <td class="text">User 4</td>
+      <td><button class="edit-button">View</button></td>
     </tr>
   </table>
 </div>

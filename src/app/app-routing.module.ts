@@ -17,6 +17,7 @@ import { WelcomeEmployeeComponent } from './welcome-employee/welcome-employee.co
 import { AttendanceCalendarComponent } from './attendance-calendar/attendance-calendar.component';
 import { SentRequestComponent } from './sent-request/sent-request.component';
 import { RegularizeAttendanceComponent } from './regularize-attendance/regularize-attendance.component';
+import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
 const routes: Routes = [
   { path: '', redirectTo: '/attendance', pathMatch: 'full' },
   {path: 'attendance', component: AttendanceComponent},
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path:'welcome-employee',component:WelcomeEmployeeComponent},
   { path: 'attendance-calendar', component: AttendanceCalendarComponent },
   {path: 'sent-request',component:SentRequestComponent},
-  {path:'regularize-attendance',component:RegularizeAttendanceComponent}
+  {path:'regularize-attendance',component:RegularizeAttendanceComponent},
+  {path: 'attendance-management',component:AttendanceManagementComponent},
 
 ];
 

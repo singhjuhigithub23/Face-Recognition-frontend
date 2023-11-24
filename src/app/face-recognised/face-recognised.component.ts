@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./face-recognised.component.css']
 })
 export class FaceRecognisedComponent {
+  image="../assets/astreya-logo-white.svg"
 
   img="../assets/face_recognised.jpg"
   constructor(private router: Router) {}

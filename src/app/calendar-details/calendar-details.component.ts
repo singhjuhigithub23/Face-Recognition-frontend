@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./calendar-details.component.css']
 })
 export class CalendarDetailsComponent {
+  boy_icon="../assets/user-icon.png"
 
 }
