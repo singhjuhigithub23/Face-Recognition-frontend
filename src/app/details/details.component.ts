@@ -14,6 +14,17 @@ export class DetailsComponent {
 
   this.router.navigate(['/login']);
   }
+  showadmindetails(){
+    // Show the notification box
+    const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+    admindetails.style.display = 'block';
+
+ }
+ hideNotification() {
+   // Hide the notification box
+   const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+   admindetails.style.display = 'none';
+ }
   
 
 }

@@ -8,7 +8,7 @@ nav {
   /* background-color: #f0eaea; */
   padding: 15px;
   display: flex;
-  gap: 75rem;
+  gap: 80rem;
  margin-bottom: auto;
 }
 
@@ -30,8 +30,11 @@ a {
 }
 .nav-icon{
   
-  width: 25px;
-    height: 25px;
+  width: 30px;
+    height: 35px;
+    
+    
+
 }
 
 container {
@@ -104,9 +107,7 @@ th {
   color: #fff;
 }
 .admin-container {
- 
-  
-    top: 110px;
+   top: 110px;
     right: 110px;
     background-color: #fff; 
     color: #333; 
@@ -126,6 +127,14 @@ th {
   margin-bottom: 12px;
   /* font-weight: bold; */
 }
+.Logout{
+  cursor: pointer;
+  font-size: 18px;
+  align-self: flex-end; 
+  font-weight: bold;
+  color: black;
+  
+ }
 
 
 .close-button {

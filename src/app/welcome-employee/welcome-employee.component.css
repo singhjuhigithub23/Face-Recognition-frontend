@@ -78,13 +78,13 @@ h2 {
   
   top: 250px;
   right: 250px;
-  background-color: rgb(0, 136, 0); /* Blue background color */
-  color: #fff; /* White text color */
+  background-color: rgb(0, 136, 0); 
+  color: #fff; 
   padding: 10px;
   display: none;
   width: 170px;
   position: fixed;
   font-family: Arial, sans-serif;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }

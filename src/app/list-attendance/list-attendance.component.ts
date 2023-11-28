@@ -14,4 +14,16 @@ export class ListAttendanceComponent {
 
   this.router.navigate(['/calendar-details']);
   }
+  showadmindetails(){
+    // Show the notification box
+    const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+    admindetails.style.display = 'block';
+
+ }
+ hideNotification() {
+   // Hide the notification box
+   const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+   admindetails.style.display = 'none';
+ }
+
 }
