@@ -26,6 +26,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { SentRequestComponent } from './sent-request/sent-request.component';
 import { RegularizeAttendanceComponent } from './regularize-attendance/regularize-attendance.component';
 import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
+import { PickDateComponent } from './pick-date/pick-date.component';
 
 
 
@@ -52,6 +53,7 @@ import { AttendanceManagementComponent } from './attendance-management/attendanc
           SentRequestComponent,
                       RegularizeAttendanceComponent,
                       AttendanceManagementComponent,
+                      PickDateComponent,
     
     
    

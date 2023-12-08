@@ -1,0 +1,18 @@
+<body>
+  <div class="container">
+    <p>Leave start date</p>
+    <input type="date" [min]="minDate">
+    <div class="line"></div> 
+    <p>Leave end date</p>
+    <input type="date" [min]="minDate">
+    <div class="line"></div>
+    <p>Reason</p>
+    <select [(ngModel)]="selectedLevel">
+      <option [ngValue]="undefined" disabled selected>Select an option</option>
+      <option *ngFor="let item of data" [ngValue]="item">{{item.name}}</option>
+    </select>
+    <div class="line"></div>
+    <!-- <input type="text"> -->
+    <button type="button">save</button>
+  </div> 
+</body>

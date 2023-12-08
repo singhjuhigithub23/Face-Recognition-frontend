@@ -18,6 +18,7 @@ import { AttendanceCalendarComponent } from './attendance-calendar/attendance-ca
 import { SentRequestComponent } from './sent-request/sent-request.component';
 import { RegularizeAttendanceComponent } from './regularize-attendance/regularize-attendance.component';
 import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
+import { PickDateComponent } from './pick-date/pick-date.component';
 const routes: Routes = [
   { path: '', redirectTo: '/attendance', pathMatch: 'full' },
   {path: 'attendance', component: AttendanceComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path: 'sent-request',component:SentRequestComponent},
   {path:'regularize-attendance',component:RegularizeAttendanceComponent},
   {path: 'attendance-management',component:AttendanceManagementComponent},
+  {path: 'pick-date',component:PickDateComponent},
 
 ];
 
