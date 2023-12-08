@@ -2,16 +2,28 @@
 <body>
   <nav>
     <div class="nav-left">
-        <!-- <img [src]="image" alt="Logo" class="logo2"> -->
-     </div>
-    <ul>
-      <li><a><img [src]="boy_icon" alt="Photo Icon" class="nav-icon">
-        </a></li>
+      <!-- <img [src]="image" alt="Logo" class="logo2"> -->
+  </div>
+  <ul>
+    <li><a  (click)="showNotification()"><img [src]="boy_icon" alt="Photo Icon" class="nav-icon">
+      </a></li>
+     
+    
+    
+    <!-- <li><a routerLink="/login">Logout</a></li> -->
+  </ul>
+</nav>
+    <div class="admin-container" id="admin-details">
+  
+      <p id="adminname">Employee</p>
+    <p id="adminemail">Employee@gmail.com</p>
+    <p id="adminemail">ID: 23456789</p>
+
+  
+  <span class="Logout" (click)="onsave2()">Logout</span>
       
-      <li><a >Employee</a></li>
-      <li><a routerLink="/login">Logout</a></li>
-    </ul> 
-   </nav> 
+      <!-- <span class="close-button" (click)="hideNotification()">✖</span> -->
+    </div>
 
     <div class="user-info">
       <h2>Juhi Singh</h2>
