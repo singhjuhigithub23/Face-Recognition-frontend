@@ -33,9 +33,7 @@ a {
   width: 30px;
     height: 30px;
     
-    
-
-}
+  }
 
 container {
     
@@ -49,26 +47,25 @@ container {
 }
 
 table {
-  width: 100%;
   margin-top: 2px;
   border-collapse: collapse;
 }
 
 th, td {
-  padding: 12px;
+  /* padding: 5px; */
   text-align: left;
    /* Border between table rows */
 }
 
 th {
   color: #fff;
-  font-size: 21px;
+  font-size: 25px;
   text-decoration: underline;
 }
 
 .add-button, .edit-button {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -77,12 +74,17 @@ th {
   margin: 5px;
   transition: background-color 0.3s ease;
 }
+.heading{
+  padding:20px;
+}
 
 .add-button {
   background-color: #3498db; 
   color: #fff;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
  
  
     
@@ -95,16 +97,31 @@ th {
 .edit-button {
   background-color: #ff8c00; 
   color: #fff;
-  margin-left: 221px; 
+  margin-left: 200px; 
 }
 
 .edit-button:hover {
   background-color: #d35400; 
 }
+.edit-button1{
+  background-color: #ff8c00; 
+  color: #fff;
+  margin-left: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+ 
+ 
+
+}
 
 .text {
   font-size: 21px;
   color: #fff;
+  padding: 15px;
+  margin-left: 30px;
 }
 .admin-container {
    top: 110px;

@@ -19,8 +19,8 @@ nav {
 }
 .nav-icon{
 
-  width: 25px;
-    height: 25px;
+  width: 30px;
+    height: 30px;
 }
 
 
@@ -124,6 +124,14 @@ a {
   margin-bottom: 12px;
   /* font-weight: bold; */
 }
+.Logout{
+  cursor: pointer;
+  font-size: 18px;
+  align-self: flex-end; 
+  font-weight: bold;
+  color: black;
+  
+ }
 
 
 .close-button {
