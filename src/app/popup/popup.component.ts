@@ -8,16 +8,24 @@ import { Router } from '@angular/router';
 })
 export class PopupComponent {
   image="../assets/astreya-logo-white.svg"
- 
-  constructor(private router: Router) {}
-  onsave(){
-
-    this.router.navigate(['/sent-request']);
+  details: boolean = false;
+  showNotification() {
+    this.details = true
+    if (this.details == true)
+    {
+      const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+      admindetails.style.display = 'block';
     }
-    onsave1(){
   
-      this.router.navigate(['/attendance']);
-      }
+
+  }
+ hideNotification() {
+   // Hide the notification box
+   const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+   admindetails.style.display = 'none';
+ }
+ 
+ 
 
 }
 

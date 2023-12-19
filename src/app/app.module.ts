@@ -27,6 +27,7 @@ import { SentRequestComponent } from './sent-request/sent-request.component';
 import { RegularizeAttendanceComponent } from './regularize-attendance/regularize-attendance.component';
 import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
 import { PickDateComponent } from './pick-date/pick-date.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -54,6 +55,7 @@ import { PickDateComponent } from './pick-date/pick-date.component';
                       RegularizeAttendanceComponent,
                       AttendanceManagementComponent,
                       PickDateComponent,
+                      ContactComponent,
     
     
    
