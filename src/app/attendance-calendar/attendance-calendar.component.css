@@ -126,6 +126,9 @@ a {
    font-size: 18px;
    align-self: flex-end; 
   }
+  .calendar{
+    margin-bottom: 20px;
+  }
 
 
 

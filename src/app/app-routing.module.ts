@@ -20,6 +20,9 @@ import { RegularizeAttendanceComponent } from './regularize-attendance/regulariz
 import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
 import { PickDateComponent } from './pick-date/pick-date.component';
 import { ContactComponent } from './contact/contact.component';
+import { AbsenceComponent } from './absence/absence.component';
+import { AdduserFormComponent } from './adduser-form/adduser-form.component';
+import { MarkAttendanceFormComponent } from './mark-attendance-form/mark-attendance-form.component';
 const routes: Routes = [
   { path: '', redirectTo: '/attendance', pathMatch: 'full' },
   {path: 'attendance', component: AttendanceComponent},
@@ -41,7 +44,12 @@ const routes: Routes = [
   {path:'regularize-attendance',component:RegularizeAttendanceComponent},
   {path: 'attendance-management',component:AttendanceManagementComponent},
   {path: 'pick-date',component:PickDateComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'absence',component:AbsenceComponent},
+  {path:'adduserform',component:AdduserFormComponent},
+  {path:'mark-attendance-form',component:MarkAttendanceFormComponent}
+
+
 
 ];
 

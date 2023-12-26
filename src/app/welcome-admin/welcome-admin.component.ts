@@ -32,6 +32,10 @@ export class WelcomeAdminComponent {
 
           this.router.navigate(['/attendance-management']);
           }
+          onsave5(){
+
+            this.router.navigate(['/absence']);
+            }
           showNotification() {
             this.details = !this.details
             if (this.details == true)

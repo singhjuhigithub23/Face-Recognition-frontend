@@ -12,7 +12,7 @@ export class AttendanceComponent {
   constructor(private router: Router) {}
   onsave(){
 
-  this.router.navigate(['/face-recognised']);
+  this.router.navigate(['/mark-attendance-form']);
   }
 
 }

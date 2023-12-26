@@ -28,6 +28,14 @@ import { RegularizeAttendanceComponent } from './regularize-attendance/regulariz
 import { AttendanceManagementComponent } from './attendance-management/attendance-management.component';
 import { PickDateComponent } from './pick-date/pick-date.component';
 import { ContactComponent } from './contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AbsenceComponent } from './absence/absence.component';
+import { AdduserFormComponent } from './adduser-form/adduser-form.component';
+import { MarkAttendanceFormComponent } from './mark-attendance-form/mark-attendance-form.component';
 
 
 
@@ -56,6 +64,9 @@ import { ContactComponent } from './contact/contact.component';
                       AttendanceManagementComponent,
                       PickDateComponent,
                       ContactComponent,
+                      AbsenceComponent,
+                      AdduserFormComponent,
+                      MarkAttendanceFormComponent,
     
     
    
@@ -66,6 +77,11 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     FormsModule,
     FullCalendarModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
