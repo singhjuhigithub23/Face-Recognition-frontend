@@ -28,6 +28,11 @@ export class UserComponent {
 
       this.router.navigate(['/login']);
       }
+      onsave3(){
+
+        this.router.navigate(['/edit-details']);
+        }
+
     showNotification() {
       this.details = !this.details
       if (this.details == true)

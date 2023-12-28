@@ -43,18 +43,33 @@
     
   </div>
   <div class="content">
-    <button class="view-users-button"(click)="onsave5()">Employee absence requests</button>
-    
-  </div>
-  <div class="content">
     <button class="view-users-button"(click)="onsave4()">Mark attendance</button>
     
   </div>
+  <div class="content">
+    
+    <mat-form-field >
+      <mat-label>Employee absence requests</mat-label>
+      <mat-select [(ngModel)]="selectedLevel" (selectionChange)="onsave5()">
+          <mat-option *ngFor="let employee of employees" [value]="employee.value">{{employee.viewValue}}</mat-option>
+          
+
+        </mat-select>
+    </mat-form-field>
+    
+    
+  </div>
+  
   <!-- <div class="content1">
     <button class="logout"(click)="onsave1()">Logout</button>
    
   </div> -->
-
+  <!-- <mat-form-field>
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
 
 
 </body>

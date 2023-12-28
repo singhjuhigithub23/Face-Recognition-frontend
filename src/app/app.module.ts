@@ -36,6 +36,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { AbsenceComponent } from './absence/absence.component';
 import { AdduserFormComponent } from './adduser-form/adduser-form.component';
 import { MarkAttendanceFormComponent } from './mark-attendance-form/mark-attendance-form.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { DemoUtilsComponent } from './demo-utils/demo-utils.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
 
@@ -67,6 +73,8 @@ import { MarkAttendanceFormComponent } from './mark-attendance-form/mark-attenda
                       AbsenceComponent,
                       AdduserFormComponent,
                       MarkAttendanceFormComponent,
+                      EditDetailsComponent,
+                      DemoUtilsComponent,
     
     
    
@@ -82,6 +90,9 @@ import { MarkAttendanceFormComponent } from './mark-attendance-form/mark-attenda
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
+    MatInputModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]

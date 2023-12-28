@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+interface employee {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-welcome-admin',
   templateUrl: './welcome-admin.component.html',
@@ -11,6 +16,14 @@ export class WelcomeAdminComponent {
   bell="../assets/bell_icon1.jpg"
   boy_icon="../assets/user-icon.png"
   details: boolean = false;
+  selectedLevel: any;
+
+  employees: employee[] = [
+    {value: 'Juhi', viewValue: 'Juhi'},
+    {value: 'Yash', viewValue: 'Yash'},
+    {value: 'Sahith', viewValue: 'Sahith'},
+  ];
+  
   constructor(private router: Router) {}
   onsave(){
 
@@ -32,9 +45,12 @@ export class WelcomeAdminComponent {
 
           this.router.navigate(['/attendance-management']);
           }
-          onsave5(){
+          onsave5() {
+            console.log(this.selectedLevel)
 
-            this.router.navigate(['/absence']);
+
+            
+            this.router.navigate(['/absence', this.selectedLevel]);
             }
           showNotification() {
             this.details = !this.details

@@ -17,13 +17,13 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 22vw;
+    width: 23vw;
 }
 
-.login-container h3 {
+.login-container h2 {
     text-align: center;
 }
-.login-container h5 {
+.login-container h4 {
     text-align: center;
 }
 

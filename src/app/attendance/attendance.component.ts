@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AttendanceComponent {
   
   image="../assets/astreya-logo-white.svg"
+  
   constructor(private router: Router) {}
   onsave(){
 

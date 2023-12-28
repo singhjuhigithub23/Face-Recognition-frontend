@@ -60,26 +60,28 @@ a {
     /* border: 1px solid #ddd; */
     padding: 10px;
     margin-bottom: 10px;
+    color: #fff;
     border-radius: 4px;
   }
 
-  .user-info {
+ 
+  .user-actions{
     display: flex;
     align-items: center;
     color: #fff;
-    
-    /* margin-right: 5px; */
-  }
 
-  .user-info img {
-    /* border-radius: 10%;
-    margin-right: 10px; */
+  }
+  .user-actions img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-bottom: 5px;
+    
     margin-right: 11px;
+    
+
   }
+
+  
 
   .user-actions button {
     cursor: pointer;
@@ -94,12 +96,15 @@ a {
     background-color: #4caf50;
     color: #fff;
     margin-left: 201px;
+    height: 30px;
   }
 
   .reject-btn {
     background-color: #f44336;
     color: #fff;
     margin-left: 20px;
+    height: 30px;
+    width: 60px;
   }
   .admin-container {
  
