@@ -1,21 +1,51 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CalendarView } from 'angular-calendar';
 import { startOfYear,subYears } from 'date-fns';
 import { CalendarEvent } from 'angular-calendar';
 import { Subject } from 'rxjs';
+import { DateRange, MAT_DATE_RANGE_SELECTION_STRATEGY, MatDateRangeSelectionStrategy } from '@angular/material/datepicker';
+import { DateAdapter } from '@angular/material/core';
 
+@Injectable()
+export class FiveDayRangeSelectionStrategy<D> implements MatDateRangeSelectionStrategy<D> {
+  constructor(private _dateAdapter: DateAdapter<D>) {}
+
+  selectionFinished(date: D | null): DateRange<D> {
+    return this._createFiveDayRange(date);
+  }
+
+  createPreview(activeDate: D | null): DateRange<D> {
+    return this._createFiveDayRange(activeDate);
+  }
+
+  private _createFiveDayRange(date: D | null): DateRange<D> {
+    if (date) {
+      const start = this._dateAdapter.addCalendarDays(date, 0);
+      const end = this._dateAdapter.addCalendarDays(date, 6);
+      return new DateRange<D>(start, end);
+    }
+
+    return new DateRange<D>(null, null);
+  }
+}
 
 @Component({
   selector: 'app-attendance-calendar',
   templateUrl: './attendance-calendar.component.html',
-  styleUrls: ['./attendance-calendar.component.css']
+  styleUrls: ['./attendance-calendar.component.css'],
+  providers: [
+    {
+      provide: MAT_DATE_RANGE_SELECTION_STRATEGY,
+      useClass: FiveDayRangeSelectionStrategy,
+    },
+  ],
 })
 export class AttendanceCalendarComponent implements OnInit {
   boy_icon="../assets/user-icon.png"
   details: boolean = false;
   view: CalendarView = CalendarView.Month;
-  viewDate = startOfYear(subYears(new Date(), 1));
+  viewDate: Date =new Date();
   events: CalendarEvent[] = [];
 refresh!: Subject<any>;
   constructor(private router: Router) {}

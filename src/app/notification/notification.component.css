@@ -62,6 +62,7 @@ a {
     margin-bottom: 10px;
     color: #fff;
     border-radius: 4px;
+    margin-left: 450px;
   }
 
  
@@ -96,14 +97,14 @@ a {
     background-color: #4caf50;
     color: #fff;
     margin-left: 201px;
-    height: 30px;
+    height: 35px;
   }
 
   .reject-btn {
     background-color: #f44336;
     color: #fff;
     margin-left: 20px;
-    height: 30px;
+    height: 35px;
     width: 60px;
   }
   .admin-container {

@@ -18,11 +18,15 @@
                 </div>
             </div>
 
-            <button type="submit" (click)="onsave()"class="btn btn-primary btn-block">Submit</button>
+            <button type="submit" (click)="showNotification()"class="btn btn-primary btn-block">Submit</button>
         </form>
         <button type="button" (click)="onsave1()" class="logout-btn" >Redirect</button>
     </div>
     <!-- <button type="submit" (click)="onsave1()"class="button">Redirect to face recognised</button> -->
+    <div class="admin-container" id="admin-details">
+        <p class="Request">Request Sent!!</p>
+        <span class="close-button" (click)="hideNotification()">✖</span>
+    </div>
 
 
 </body>

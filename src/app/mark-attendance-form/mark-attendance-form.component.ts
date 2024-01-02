@@ -7,6 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./mark-attendance-form.component.css']
 })
 export class MarkAttendanceFormComponent {
+  details: boolean = false;
+  
+
+
   constructor(private router: Router) {}
   onsave(){
 
@@ -16,5 +20,20 @@ export class MarkAttendanceFormComponent {
 
       this.router.navigate(['/face-recognised']);
       }
+      showNotification() {
+        this.details = true
+        if (this.details == true)
+        {
+          const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+          admindetails.style.display = 'block';
+        }
+      
+    
+      }
+     hideNotification() {
+       // Hide the notification box
+       const admindetails = document.getElementById('admin-details') as HTMLDivElement;
+       admindetails.style.display = 'none';
+     }
 
-}
+    }

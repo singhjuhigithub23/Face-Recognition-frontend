@@ -59,7 +59,7 @@ p {
 }
 .admin-container {
     top: 470px;
-     right: 650px;
+     right: 700px;
      background-color: green; 
      color: #fff; 
      padding: 20px;
@@ -72,5 +72,8 @@ p {
   }
   .Request{
     color: #fff;
+  }
+  .close-button{
+    cursor: pointer;
   }
   
