@@ -39,7 +39,7 @@
           <input matStartDate placeholder="Start date">
           <input matEndDate placeholder="End date">
         </mat-date-range-input>
-        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-hint><b>MM/DD/YYYY – MM/DD/YYYY</b></mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-date-range-picker #picker><mat-datepicker-actions>
             <button mat-button matDatepickerCancel class="cancel-btn">Cancel</button>
@@ -59,23 +59,25 @@
   </div>
 
     <div class="calendar1">
-      <div class="day">
-        <span class="day-name">Mon</span><br>
-        <span class="attendance present">Present</span>
+      <div class="calendar2">
+      <div class="day row-md-3">
+        <span class="day-name"><b>Working hours</b></span><br>
+        <span class="attendance present">36 hrs</span>
       </div>
-      <div class="day">
-        <span class="day-name">Tue</span><br>
-        <span class="attendance absent">Absent</span>
+      <div class="day row-md-3">
+        <span class="day-name"><b>Sick Leave</b></span><br>
+        <span class="attendance leave">4 hrs</span>
       </div>
-      <div class="day">
-        <span class="day-name">Wed</span><br>
-        <span class="attendance present">Present</span>
+      <div class="day row-md-3">
+        <span class="day-name"><b>Vacation Leave</b></span><br>
+        <span class="attendance leave">83.23 hrs</span>
       </div>
-      <div class="day">
-        <span class="day-name">Thu</span><br>
-        <span class="attendance absent">Absent</span>
+      <div class="day row-md-3">
+        <span class="day-name"><b>Total</b></span><br>
+        <span class="attendance absent">87.23 hrs</span>
       </div>
-      <div class="day">
+    </div>
+      <!-- <div class="day">
         <span class="day-name">Fri</span><br>
         <span class="attendance present">Present</span>
       </div>
@@ -86,7 +88,7 @@
       <div class="day">
         <span class="day-name">Sun</span><br>
         <span class="attendance">----</span>
-      </div>
+      </div> -->
 
   
 

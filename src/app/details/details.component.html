@@ -27,16 +27,16 @@
             <img [src]="girl_icon" alt="User Icon">
             
         </div>
-        <p class="info"><I><span class="name">Hello Juhi Singh!! </span></I></p>
+        <p class="info"><I><span class="name">Hello {{emp_name}}!!</span></I></p>
         
         <div class="user-details">
             
-            <p class="info"><span>Name</span> = Juhi Singh</p>
-            <p class="info"><span>Status</span> = <span class="status">Approved</span></p>
-            <p class="info"><span>Gender</span> = Female</p>
-            <p class="info"><span>ID</span> = 12345</p>
-            <p class="info"><span>Attendance</span> = Present</p>
-            <button type="submit"(click)="onsave()">Logout</button>
+            <p class="info"><span>Name</span> = {{emp_name}}</p>
+            <p class="info"><span>Status</span> = <span class="status">{{job}}</span></p>
+            <p class="info"><span>Gender</span> = {{gender}}</p>
+            <p class="info"><span>ID</span> = {{emp_id}}</p>
+            <p class="info"><span>Email</span> = {{email}}</p>
+            <button type="submit"(click)="onsave()" class="Logout1">Logout</button>
         </div>
     </div>
 </body>

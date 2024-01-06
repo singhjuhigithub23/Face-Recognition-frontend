@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { EmployeeserviceService } from '../employee.service';
+import { MyserviceService } from '../myservice.service';
 
 interface employee {
   value: string;
@@ -11,12 +13,17 @@ interface employee {
   templateUrl: './welcome-admin.component.html',
   styleUrls: ['./welcome-admin.component.css']
 })
-export class WelcomeAdminComponent {
+export class WelcomeAdminComponent implements OnInit {
+  datas: any = [];
   bell_icon="&#x1F514"
   bell="../assets/bell_icon1.jpg"
   boy_icon="../assets/user-icon.png"
   details: boolean = false;
   selectedLevel: any;
+  emp_id!: number;
+  emp_name!: string;
+  username!: string;
+  user_id!: string
 
   employees: employee[] = [
     {value: 'Juhi', viewValue: 'Juhi'},
@@ -24,7 +31,21 @@ export class WelcomeAdminComponent {
     {value: 'Sahith', viewValue: 'Sahith'},
   ];
   
-  constructor(private router: Router) {}
+  constructor(private router: Router,private myservice: MyserviceService) {}
+  
+  
+  ngOnInit(): void {
+    this.emp_id= history.state.data;
+    console.log(this.emp_id)
+    // console.log(state.data) ;
+    this.myservice.get_attendance_by_id(this.emp_id).subscribe((response)=>{
+      
+      this.emp_name = response.username;
+    })
+   
+    
+    
+  }
   onsave(){
 
   this.router.navigate(['/notification']);
@@ -46,11 +67,11 @@ export class WelcomeAdminComponent {
           this.router.navigate(['/attendance-management']);
           }
           onsave5() {
-            console.log(this.selectedLevel)
+            
 
 
             
-            this.router.navigate(['/absence', this.selectedLevel]);
+            this.router.navigate(['/absence'], {state:{data:this.selectedLevel}});
             }
           showNotification() {
             this.details = !this.details

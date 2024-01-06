@@ -28,20 +28,20 @@
     <div class="admin-container">
         <h1>Attendance Management</h1>
 
-        <form class="attendance-form">
+        <form class="attendance-form" (ngSubmit)="onsave()" >
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter name" required>
+            <input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Enter name" required>
 
             <label for="id">ID:</label>
-            <input type="text" id="id" placeholder="Enter ID" required>
+            <input type="text" id="id" name="id" [(ngModel)]="id" placeholder="Enter ID" required>
 
             <label for="status">Status:</label>
-            <select id="status">
+            <select id="status" name="status" [(ngModel)]="status">
                 <option value="present">Present</option>
                 <option value="absent">Absent</option>
             </select>
 
-            <button type="submit">Submit</button>
+            <button type="submit" >Submit</button>
         </form>
     </div>
 

@@ -9,27 +9,39 @@
   height: 100vh;
   margin: 0;
 } */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: cover;
   /* justify-content: center; */
   background-image: url("/assets/astreya_background.png");
   height: 100vh;
 }
-nav {
-  /* background-color: #f0eaea; */
-  padding: 15px;
-  display: flex;
-  gap: 75rem;
- 
-}
-.nav-icon{
 
+nav {
+  
+  display: flex;
+  width: 100%;
+  /* border: solid black 2px; */
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  color: #fff;
+}
+
+
+
+.nav-icon {
   width: 30px;
   height: 32px;
 }
@@ -51,17 +63,19 @@ a {
   color: #fff;
   text-decoration: none;
 }
+ 
 
 
-.container {
-  border: 2px solid #fff; 
-  border-radius: 15px; 
-  padding: 40px; 
-}
+/* .container { */
+  /* border: 2px solid #fff; */
+  /* border-radius: 15px; */
+  /* padding: 40px; */
+/* } */
 
-h2 {
+h1 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .attendance-status {
@@ -76,25 +90,28 @@ h2 {
 .user-status {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .user-name {
   font-size: 18px;
   color: #fff;
-  margin-right: 251px; 
+  margin-right: 251px;
 }
 
-.present, .absent {
+.present,
+.absent {
   padding: 10px;
   border-radius: 4px;
-  width: 70px;
+  width: 90px;
   text-align: center;
   color: #fff;
 }
 
 .present {
   background-color: #4caf50;
+  color: white;
+
 }
 
 .absent {
@@ -103,43 +120,40 @@ h2 {
 
 .admin-container {
   top: 110px;
-   right: 110px;
-   background-color: #fff; 
-   color: #333; 
-   padding: 20px;
-   display: none;
-   width: 180px;
-   position: fixed;
-   font-family: Arial, sans-serif;
-   border-radius: 10px; /* Rounded corners */
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  right: 110px;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  display: none;
+  width: 180px;
+  position: fixed;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
-#adminname, #adminemail {
- margin: 0;
- font-size: 18px;
- margin-bottom: 12px;
- /* font-weight: bold; */
+#adminname,
+#adminemail {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 12px;
+  /* font-weight: bold; */
 }
-.Logout{
+
+.Logout {
   cursor: pointer;
   font-size: 18px;
-  align-self: flex-end; 
+  align-self: flex-end;
   font-weight: bold;
   color: black;
-  
- }
+
+}
 
 
 .close-button {
- cursor: pointer;
- font-size: 18px;
- align-self: flex-end; 
+  cursor: pointer;
+  font-size: 18px;
+  align-self: flex-end;
 }
-
-
-
-
-
-

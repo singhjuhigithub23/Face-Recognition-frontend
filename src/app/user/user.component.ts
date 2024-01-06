@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { EmployeeserviceService } from '../employee.service';
 
 @Component({
   selector: 'app-user',
@@ -9,8 +11,26 @@ import { Router } from '@angular/router';
 export class UserComponent {
   bell="../assets/bell.jpeg"
   boy_icon="../assets/user-icon.png"
+  employees: any = [];
   details: boolean = false;
-  constructor(private router: Router) {}
+  
+  
+  constructor(private router: Router, private employeeservice:EmployeeserviceService) {
+  
+  }
+  ngOnInit(): void {
+    this.employeeservice.getAllEmployee().subscribe((response) =>{
+      this.employees = response
+      
+
+
+    })
+  }
+
+ 
+  
+ 
+
 
   onsave() {
     // Perform your authentication logic here.

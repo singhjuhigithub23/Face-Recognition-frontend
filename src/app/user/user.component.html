@@ -35,26 +35,12 @@
       <th class="heading">Employee</th>
       <!-- <th>Action</th> -->
     </tr>
-    <tr>
-      <td class="text">Employee 1</td>
-      <td><button class="edit-button"(click)="onsave()">View</button></td>
-      <td><button class="edit-button1"(click)="onsave3()">Edit</button></td>
+    <tr *ngFor = "let i of employees">
+      <td class="text" >{{i.emp_name}}</td>
+      <a [routerLink]="['/details', i.emp_id]">View</a>
     </tr>
-    <tr>
-      <td class="text">Employee 2</td>
-      <td><button class="edit-button">View</button></td>
-      <td><button class="edit-button1">Edit</button></td>
-    </tr>
-    <tr>
-      <td class="text">Employee 3</td>
-      <td><button class="edit-button">View</button></td>
-      <td><button class="edit-button1"(click)="onsave()">Edit</button></td>
-    </tr>
-    <tr>
-      <td class="text">Employee 4</td>
-      <td><button class="edit-button">View</button></td>
-      <td><button class="edit-button1"(click)="onsave()">Edit</button></td>
-    </tr>
+   
+    
   </table>
 </div>
 </body>
